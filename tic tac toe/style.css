@@ -1,0 +1,22 @@
+button.game{
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 40px;
+}
+
+html{
+  font-family: helvetica;
+  font-style: italic;
+}
+
+button.realbutton{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0px;
+}
+
+button.realbutton:hover{
+  background-color: yellow;
+}

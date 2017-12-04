@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="./jscode.js"></script>
+</head>
+<body class="container">
+  <div class="game">
+  <table>
+    <tr>
+      <td>
+        <button id="cell0" class="game" onclick="makemove(0,0); getboard();"></button>
+      </td>
+      <td>
+        <button id="cell1" class="game" onclick="makemove(1,0); getboard();"></button>
+      </td>
+      <td>
+        <button id="cell2" class="game" onclick="makemove(2,0); getboard();"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button id="cell3" class="game" onclick="makemove(0,1); getboard();"></button>
+      </td>
+      <td>
+        <button id="cell4" class="game" onclick="makemove(1,1); getboard();"></button>
+      </td>
+      <td>
+        <button id="cell5" class="game" onclick="makemove(2,1); getboard();"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button id="cell6" class="game" onclick="makemove(0,2); getboard();"></button>
+      </td>
+      <td>
+        <button id="cell7" class="game" onclick="makemove(1,2); getboard();"></button>
+      </td>
+      <td>
+        <button id="cell8" class="game" onclick="makemove(2,2); getboard();"></button>
+      </td>
+    </tr>
+  </table>
+    </div>
+  <br />
+        Contract Address: <input type="text" id="address" value="">
+        <button value="Submit" onclick="setAddress(); getboard();" class="realbutton">submit</button>
+        <button value="Submit" onclick="resetBoard(); getboard();" class="realbutton">reset board</button>
+  <br />
+        user: <input type="text" id="user" value="">
+  <br />
+        winner: <p id="winner">null</p>
+        <br />
+        turn: <p id="turn">null</p>
+</body>
+</html>
